@@ -16,7 +16,7 @@ In Terminal (once you are in the directory of this repo):
 ```shell
 php se/index.php
 ```
-runs the code contained in index.php. You can interrupt the running code by pressing Ctrl+C on macOS.
+runs the code contained in `index.php`. You can interrupt the running code by pressing `Ctrl+C` on macOS.
 
 If you want to write to a JSON file:
 ```shell

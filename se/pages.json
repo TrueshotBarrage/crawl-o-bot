@@ -1,0 +1,170 @@
+[
+  {
+    "Title": "Homepage",
+    "Description": "",
+    "Keywords": "",
+    "URL": "https://heydavid.kim"
+  },
+  {
+    "Title": "Google",
+    "Description": "Search the world's information, including webpages, images, videos and more. Google has many special features to help you find exactly what you're looking for.",
+    "Keywords": "",
+    "URL": "https://google.com"
+  },
+  {
+    "Title": "Sign in - Google Accounts",
+    "Description": "",
+    "Keywords": "",
+    "URL": "https://accounts.google.com/ServiceLogin?hl=en&passive=true&continue=https://www.google.com/"
+  },
+  {
+    "Title": "Google",
+    "Description": "Search the world's information, including webpages, images, videos and more. Google has many special features to help you find exactly what you're looking for.",
+    "Keywords": "",
+    "URL": "https://www.google.com/webhp?tab=ww"
+  },
+  {
+    "Title": "Google Books",
+    "Description": "",
+    "Keywords": "",
+    "URL": "https://books.google.com/bkshp?hl=en&tab=wp"
+  },
+  {
+    "Title": "  Google Maps  ",
+    "Description": " Find local businesses, view maps and get driving directions in Google Maps. ",
+    "Keywords": "",
+    "URL": "https://maps.google.com/maps?hl=en&tab=wl"
+  },
+  {
+    "Title": "Browse All of Google's Products & Services - Google",
+    "Description": "Browse a list of Google products designed to help you work and play, stay organized, get answers, keep in touch, grow your business, and more.",
+    "Keywords": "",
+    "URL": "https://www.google.com/intl/en/about/products?tab=wh"
+  },
+  {
+    "Title": "",
+    "Description": "",
+    "Keywords": "",
+    "URL": "https://www.google.com/../stories/"
+  },
+  {
+    "Title": "Google Drive - Apps on Google Play",
+    "Description": "Google Drive is a safe place for all your files and puts them within reach from any smartphone, tablet, or computer. Files in Drive â like your videos, photos, and documents â are backed up safely so you canât lose them. Once there, you can easily invite others to view, edit, or leave comments on any of your files or folders.With Drive, you can:- Safely store your files and access them from anywhere.- Search for files by name and content.- Easily share files and folders with others.- Quickly view your content.- Set access levels for who can view, comment, or edit.- Quickly access recent files.- See file details and activity.- Enable viewing of files offline.- Use your device camera to scan in paper documents.- Access pictures and videos from Google Photos.",
+    "Keywords": "",
+    "URL": "https://play.google.com/store/apps/details?id=com.google.android.apps.docs"
+  },
+  {
+    "Title": "Google Calendar - Chrome Web Store",
+    "Description": "Quick overview of your Google Calendar with one-click access to locations & documents",
+    "Keywords": "",
+    "URL": "https://chrome.google.com/webstore/detail/google-calendar/gmbgaklkmjakoegficnlkhebmhkjfich"
+  },
+  {
+    "Title": "Nest Wifi - Mesh Router - Google Store",
+    "Description": "Wifi extenders can add some range, but degrade performance. Nest Wifi gives your whole home mesh wifi coverage, plus a signal strong enough to handle up to 200 connected devices and fast enough to stream multiple 4K videos at a time.",
+    "Keywords": "",
+    "URL": "https://store.google.com/product/google_wifi"
+  },
+  {
+    "Title": "Google Chrome - The New Chrome & Most Secure Web Browser",
+    "Description": "Get more done with the new Google Chrome. A more simple, secure, and faster web browser than ever, with Google’s smarts built-in. Download now.",
+    "Keywords": "",
+    "URL": "https://www.google.com/chrome/"
+  },
+  {
+    "Title": "Google Chrome - The New Chrome & Most Secure Web Browser",
+    "Description": "Get more done with the new Google Chrome. A more simple, secure, and faster web browser than ever, with Google’s smarts built-in. Download now.",
+    "Keywords": "",
+    "URL": "https://www.google.com/chrome/#"
+  },
+  {
+    "Title": "Chromium OS - The Chromium Projects",
+    "Description": "Home of the Chromium Open Source Project",
+    "Keywords": "",
+    "URL": "https://www.chromium.org/chromium-os"
+  },
+  {
+    "Title": "Chrome Web Store",
+    "Description": "Small programs that add new features to your browser and personalize your browsing experience.",
+    "Keywords": "",
+    "URL": "https://chrome.google.com/webstore/category/extensions?h1=en"
+  },
+  {
+    "Title": "Distributing Products Built for Chrome - Google Chrome",
+    "Description": "",
+    "Keywords": "",
+    "URL": "https://developer.chrome.com/webstore/?hl=en"
+  },
+  {
+    "Title": "Opening links in Chrome for iOS - Google Chrome",
+    "Description": "",
+    "Keywords": "",
+    "URL": "https://developer.chrome.com/multidevice/ios/links"
+  },
+  {
+    "Title": "Welcome to Native Client - Google Chrome",
+    "Description": "",
+    "Keywords": "",
+    "URL": "https://developer.chrome.com/native-client"
+  },
+  {
+    "Title": "Design User Interface - Google Chrome",
+    "Description": "",
+    "Keywords": "",
+    "URL": "https://developer.chrome.com/extensions/user_interface"
+  },
+  {
+    "Title": "  Step 5:  Add Images From the Web - Google Chrome",
+    "Description": "",
+    "Keywords": "",
+    "URL": "https://developer.chrome.com/apps/app_codelab_images"
+  },
+  {
+    "Title": "WebView for Android - Google Chrome",
+    "Description": "",
+    "Keywords": "",
+    "URL": "https://developer.chrome.com/multidevice/webview/overview"
+  },
+  {
+    "Title": "Download the Native Client SDK - Google Chrome",
+    "Description": "",
+    "Keywords": "",
+    "URL": "https://developer.chrome.com/native-client/sdk/download"
+  },
+  {
+    "Title": "OAuth2: Authenticate Users with Google - Google Chrome",
+    "Description": "",
+    "Keywords": "",
+    "URL": "https://developer.chrome.com/extensions/tut_oauth"
+  },
+  {
+    "Title": "Chrome for a Multi-Device World - Google Chrome",
+    "Description": "",
+    "Keywords": "",
+    "URL": "https://developer.chrome.com/multidevice"
+  },
+  {
+    "Title": "Messaging System - Google Chrome",
+    "Description": "",
+    "Keywords": "",
+    "URL": "https://developer.chrome.com/native-client/devguide/coding/message-system"
+  },
+  {
+    "Title": "Migrating to WebView in Android 4.4  |  Android Developers",
+    "Description": "",
+    "Keywords": "",
+    "URL": "http://developer.android.com/guide/webapps/migrating.html"
+  },
+  {
+    "Title": "WebView  |  Android Developers",
+    "Description": "",
+    "Keywords": "",
+    "URL": "http://developer.android.com/reference/android/webkit/WebView"
+  },
+  {
+    "Title": "WebSettings  |  Android Developers",
+    "Description": "",
+    "Keywords": "",
+    "URL": "http://developer.android.com/reference/android/webkit/WebSettings#getUserAgentString()"
+  }
+]

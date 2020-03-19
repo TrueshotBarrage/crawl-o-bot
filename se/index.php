@@ -1,7 +1,9 @@
 <?php
 
+// Start URL to begin crawling.
 $start = "http://localhost:3000/se/test.html";
 
+// Used to keep track of crawled (processed) sites and the sites to be crawled.
 $crawled = array();
 $crawling = array();
 
@@ -9,7 +11,7 @@ $crawling = array();
 // JSON format.
 function get_details($url)
 {
-  // Sets my user agent
+  // Sets my user agent --> "web-crawler/1.0" 
   $options = array('http' => array('method' => "GET", 'headers' => "User-Agent: web-crawler/1.0"));
   $context = stream_context_create($options);
   $doc = new DOMDocument();
@@ -33,10 +35,11 @@ function get_details($url)
 
   return '{ "Title": "' . str_replace("\n", "", $title) . '", "Description": "'
     . str_replace("\n", "", $desc) . '", "Keywords": "'
-    . str_replace("\n", "", $keywords) . '"}';
-  // return $title;
+    . str_replace("\n", "", $keywords) . '", "URL": "' . $url . '"}';
 }
 
+// Crawls each site, parsing each link into an absolute link, logging and 
+// printing each site's metadata into a JSON-friendly format.
 function follow_links($url)
 {
   global $crawled;
@@ -48,17 +51,18 @@ function follow_links($url)
   $doc = new DOMDocument();
   @$doc->loadHTML(@file_get_contents($url, false, $context));
 
+  // Randomizes the order to traverse the list of links.
   $linkList = $doc->getElementsByTagName("a");
   $linkArray = iterator_to_array($linkList);
   shuffle($linkArray);
-  // print_r($linkArray);
 
-  // foreach ($linkArray as $link) {
-  for ($i = 0; $i < min(count($linkArray), 5); $i++) {
+  // Parses the URLs of the list of links, to a maximum (to encourage wider 
+  // traversal). Cap can be adjusted to preference.
+  $cap = 5;
+  for ($i = 0; $i < min(count($linkArray), $cap); $i++) {
     $link = $linkArray[$i];
 
     $l = $link->getAttribute("href");
-    // echo $l . "\n";
     $parsed = parse_url($url);
 
     if (substr($l, 0, 1) == "/") {
@@ -107,29 +111,23 @@ function follow_links($url)
       }
     }
 
+    // Logs the list of processed URLs--"crawled" is more aptly "processed".
     if (!in_array($l, $crawled)) {
       $crawled[] = $l;
       $crawling[] = $l;
-      echo get_details($l) . "\n";
-      // echo $l . "\n";
+      echo get_details($l) . ",\n"; // "," needed to separate each JSON entry
     }
   }
 
-  // Pops current site from the queue (stack?) of websites.
-
-  // Randomly goes through each site using BFS-DFS to crawl every site from 
-  // the given url.
-  // foreach ($crawling as $site) {
+  // Randomly goes through each site using DFS to crawl every site from 
+  // the given url. Should not stop until interrupted, or reaches dead end.
   $site = end($crawling);
-  // print_r($crawling);
   array_splice($crawling, count($crawling) - 1);
-  if ($site != NULL) {
-    echo "Following: " . $site . "\n";
-    follow_links($site);
-  }
-  // }
+  // echo "Following: " . $site . "\n";
+  follow_links($site);
 }
 
+// Used for JSON-formatted array -> MUST append "]" at the end manually, 
+// since KeyboardInterrupt (^C) used to stop writing to the file.
+echo "[\n";
 follow_links($start);
-
-print_r($crawled);

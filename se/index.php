@@ -19,6 +19,7 @@ function get_details($url)
 
   $title = $doc->getElementsByTagName("title");
   $title = $title->item(0)->nodeValue;
+  $title = trim(str_replace("\n", "", $title));
 
   $desc = "";
   $keywords = "";
@@ -28,14 +29,15 @@ function get_details($url)
     $name = $meta->getAttribute("name");
     if (strtolower($name) == "description") {
       $desc = $meta->getAttribute("content");
+      $desc = trim(str_replace("\n", "", $desc));
     } else if (strtolower($name) == "keywords") {
       $keywords = $meta->getAttribute("content");
+      $keywords = trim(str_replace("\n", "", $keywords));
     }
   }
 
-  return '{ "Title": "' . str_replace("\n", "", $title) . '", "Description": "'
-    . str_replace("\n", "", $desc) . '", "Keywords": "'
-    . str_replace("\n", "", $keywords) . '", "URL": "' . $url . '"}';
+  return '{ "Title": "' . $title . '", "Description": "' . $desc
+    . '", "Keywords": "' . $keywords . '", "URL": "' . $url . '"}';
 }
 
 // Crawls each site, parsing each link into an absolute link, logging and 

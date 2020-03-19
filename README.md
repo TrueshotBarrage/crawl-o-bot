@@ -22,7 +22,7 @@ If you want to write to a JSON file:
 ```shell
 php se/index.php > filename.json
 ```
-Note: You need to manually remove the last comma "," after the interrupt, then add a closing square bracket "]" 
+Note: You need to manually remove the last comma "`,`" after the interrupt, then add a closing square bracket "`]`" 
 to the end to have valid JSON.
  
 ## Changelog

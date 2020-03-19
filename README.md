@@ -12,7 +12,13 @@ It works (mostly) as intended, except with a minor "bug" as detailed below.
 The script runs on PHP. As such, you will [need to install PHP](https://www.php.net/manual/en/install.php) 
 before running the code.
 
-In Terminal (once you are in the directory of this repo):
+First, in `index.php`, change the `$start` variable to the URL of the site you want to start crawling. 
+For me, it was a local PHP site (`test.php`), so I had to start a local server in Terminal:
+```shell
+php -S localhost:3000
+```
+
+Then, to execute the script (once you are in the directory of this repo):
 ```shell
 php se/index.php
 ```

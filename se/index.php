@@ -1,7 +1,8 @@
 <?php
 
 // Start URL to begin crawling.
-$start = "http://localhost:3000/se/test.html";
+// $start = "http://localhost:3000/se/test.html";
+$start = "https://apple.com";
 
 // Used to keep track of crawled (processed) sites and the sites to be crawled.
 $crawled = array();

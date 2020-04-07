@@ -1,4 +1,4 @@
-# DFS Web Spider
+# Crawl-o-Bot
 Figured I'd look into making one.
 
 ## Functionality
@@ -32,6 +32,8 @@ Note: You need to manually remove the last comma `,` after the interrupt, then a
 to the end to have valid JSON.
  
 ## Changelog
+* April 6th, 2020
+  * Changed name to "Crawl-o-Bot" (very important update)
 * March 18th, 2020
   * Initial version - v1.0
   * Fully functional with minor bug
